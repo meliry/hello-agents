@@ -25,6 +25,8 @@
 
 #### 选项一：AIHubmix API（推荐）
 
+> 【注】此平台未充值用户仅可有十次API调用机会
+
 AIHubmix 是一个位于美国特拉华州的 AI 模型聚合平台，整合了市面上主流的大语言模型，新发布的模型通常在一周内即可使用。该平台直接对接各大云服务商的原生 API（如 OpenAI 通过 Azure、Anthropic 通过 AWS、Google 通过官方接口等），采用美国 Google Cloud 的集群架构部署，具备多节点负载均衡能力，在稳定性和响应速度方面表现优异。
 
 > 平台提供的免费额度能够满足我们的学习需求。
@@ -82,7 +84,15 @@ ModelScope 是国内领先的大模型服务商，提供高性价比的 API 服�
 
 最终所需格式与AIHubmix的配置信息相同(Key，URL，模型名称)
 
+#### 选项三：deepseek
 
+首先需要在 deepseek 开放平台注册一个账号，并获取一个 apikey
+
+![](https://raw.githubusercontent.com/meliry/picgoImg/main/yada/20261102145345285.png)
+
+根据官网文档中描述得出 base_url 和 model_name
+
+![image-20261102150812434](https://raw.githubusercontent.com/meliry/picgoImg/main/yada/20261102150812570.png)
 
 ### 2.2 Tavily Search API 配置
 
@@ -154,6 +164,36 @@ venv\Scripts\activate
 # macOS/Linux:
 source venv/bin/activate
 ```
+
+#### jupyter notebook 创建虚拟环境
+
+1、打开 cmd 控制台，运行下面语句创建虚拟环境
+
+```bash
+conda create -n <虚拟环境名称>
+```
+
+2、激活刚刚创建的环境
+
+```bash
+conda activate <虚拟环境名称>
+```
+
+3、下载 ipykernel库
+
+```bash
+conda install ipykernel
+```
+
+4、将该虚拟环境写入notebook的kernel中
+
+```bash
+python -m ipykernel install --user --name <创建的虚拟环境名称> --display-name <jupyter notebook中显示的名称>
+```
+
+5、在 jupyter notebook 中即可切换为 python 虚拟环境
+
+
 
 ### 4.2 安装依赖包
 
