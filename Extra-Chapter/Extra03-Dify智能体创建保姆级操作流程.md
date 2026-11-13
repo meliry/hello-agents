@@ -43,8 +43,8 @@
   <img src="./images/Extra03-figures/image4.jpg" alt="高德地图MCP配置页面" width="90%"/>
   <p>图4 高德地图MCP配置页面</p>
 </div>
-
 <strong>(4) 进入高德开放平台</strong>：[https://console.amap.com/dev/index](https://console.amap.com/dev/index)
+
    - 按照图5中文字指示新建应用
 
 <div align="center">
@@ -123,8 +123,8 @@
   <img src="./images/Extra03-figures/image12.jpg" alt="日常助手模块配置" width="90%"/>
   <p>图12 日常助手模块配置</p>
 </div>
-
 <strong>LLM节点的system_prompt如下</strong>：
+
 ```
 # Role: 日常问题咨询专家
 
